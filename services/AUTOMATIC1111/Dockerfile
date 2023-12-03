@@ -29,7 +29,7 @@ RUN --mount=type=cache,target=/var/cache/apt \
 
 WORKDIR /
 RUN --mount=type=cache,target=/root/.cache/pip \
-  git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git && \
+  git clone https://github.com/cuimengkai/stable-diffusion-webui && \
   cd stable-diffusion-webui && \
   git reset --hard 4afaaf8a020c1df457bcf7250cb1c7f609699fa7 && \
   pip install -r requirements_versions.txt
